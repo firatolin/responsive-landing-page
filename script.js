@@ -21,3 +21,10 @@ window.addEventListener("scroll", () => {
 scrollBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+// Toggle mobile menu
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-menu");
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+// Close mobile menu on link click
